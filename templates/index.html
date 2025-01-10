@@ -1,0 +1,86 @@
+{% extends "base.html" %} {% block content %}
+<div class="galery-container mt-5">
+  <a
+    href="{{ url_for('main.add_photo') }}"
+    id="add-button"
+    class="btn btn-success"
+    ><i class="fa-solid fa-plus"></i> Agregar foto</a
+  >
+</div>
+<div
+  id="photoCarousel"
+  class="carousel slide custom-carousel mt-4"
+  data-bs-ride="carousel"
+  style="max-width: 75%; margin: 0 auto"
+>
+  <div class="carousel-indicators">
+    {% for photo in photos %}
+    <button
+      type="button"
+      data-bs-target="#photoCarousel"
+      data-bs-slide-to="{{ loop.index0 }}"
+      class="{% if loop.first %}active{% endif %}"
+      aria-current="{% if loop.first %}true{% endif %}"
+      aria-label="Slide {{ loop.index }}"
+    ></button>
+    {% endfor %}
+  </div>
+  <div class="carousel-inner">
+    {% for photo in photos %}
+    <div class="carousel-item {% if loop.first %}active{% endif %}">
+      <img
+        src="{{ url_for('static', filename='uploads/' + photo.image) }}"
+        class="d-block w-100"
+        alt="{{ photo.title }}"
+        style="max-height: 500px; object-fit: cover"
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="text-title">{{ photo.title }}</h5>
+        <p class="text-description">{{ photo.description }}</p>
+        <div class="button-container mt-3">
+          <form
+            action="{{ url_for('main.delete_photo', photo_id=photo.id) }}"
+            method="post"
+            style="display: inline"
+          >
+            <button
+              id="delete-button"
+              class="btn btn-danger"
+              type="submit"
+              onclick="return confirm('¿Estás seguro de que quieres eliminar esta foto?');"
+            >
+              <i class="fa-solid fa-trash"></i> Borrar
+            </button>
+          </form>
+          <a
+            id="edit-button"
+            href="{{ url_for('main.edit_photo', photo_id=photo.id) }}"
+            class="btn btn-warning"
+          >
+            <i class="fa-solid fa-pen-to-square"></i> Editar
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#photoCarousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#photoCarousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock %}

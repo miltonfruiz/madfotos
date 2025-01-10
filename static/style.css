@@ -1,0 +1,349 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+li {
+  font-family: "Raleway", serif;
+  font-size: 14px;
+}
+.container-banner {
+  background: url(./images/leon1.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  height: 607px;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  height: 607px;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  margin: 0.5rem;
+}
+.photo {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}
+.photo img {
+  max-width: 100%;
+  height: auto;
+}
+#explore-button,
+#submit-button,
+#cancel-button,
+#edit-button,
+#delete-button,
+#add-button {
+  font-size: 13px;
+  border-radius: 3px;
+  padding: 6px 27px 6px 27px;
+  color: white;
+}
+#add-button {
+  margin: 10px;
+  margin-bottom: 10px;
+}
+#edit-button:hover,
+#delete-button:hover,
+#add-button:hover {
+  border: 1px solid white;
+  transition: 1s;
+}
+#explore-button {
+  font-family: "Raleway", serif;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 7px 30px 7px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px;
+}
+.image-subcontainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  height: 600px;
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 250px;
+  height: 300px;
+  padding: 10px;
+}
+.image-subcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-info {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+#main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  height: 300px;
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+.edit-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-top: 10px;
+}
+.edit-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#edit-image {
+  height: 100%;
+}
+.h5-text {
+  border: 1px solid yellow;
+  font-size: 17px;
+}
+.description-text {
+  border: 1px solid yellow;
+  font-size: 13px;
+}
+.container-redes {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+a {
+  padding: 5px;
+}
+.h3-mis-redes {
+  font-size: 20px;
+}
+.subcontainer-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+#navbarSupportedContent {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.nav-item {
+  margin-left: 55px;
+}
+#texts-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 90%;
+}
+#welcome-text {
+  font-family: "Raleway", serif;
+  color: black;
+  font-weight: 300;
+}
+#photo-album-text {
+  width: 100%;
+  color: black;
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+}
+#container-album {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: baseline;
+  margin-top: 130px;
+  margin-bottom: 80px;
+}
+.galery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#search-button {
+  font-family: "Raleway", serif;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 5px 15px 5px 15px;
+  width: 130px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#explore-button:hover,
+#search-button:hover {
+  border: 1px solid black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  transition: 1s;
+}
+#search-input {
+  height: 30px;
+  width: 170px;
+  font-style: oblique;
+  font-size: 11px;
+  font-family: "Raleway", serif;
+}
+#album-description-text {
+  font-family: "Raleway", serif;
+  width: 90%;
+  text-align: justify;
+  font-size: 10px;
+  color: black;
+}
+#row2 {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-self: end;
+}
+.social-link {
+  color: rgba(0, 0, 0, 0.603);
+  font-size: 23px;
+  transition: 1s;
+}
+.social-link:hover {
+  color: black;
+  filter: drop-shadow(0 0 3px #bbb42e);
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+#form-search {
+  margin-left: 250px;
+}
+.fa-magnifying-glass,
+.fa-play {
+  margin-left: 5px;
+  font-size: 10px;
+}
+#galery-text {
+  font-family: "Raleway", serif;
+}
+.fa-photo-film {
+  font-size: 15px;
+}
+.fa-trash,
+.fa-pen-to-square {
+  font-size: 12px;
+}
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.custom-carousel {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+.custom-carousel img {
+  width: 50px;
+  height: 270px;
+  object-fit: cover;
+}
+.text-description,
+.text-title {
+  font-family: "Raleway", serif;
+}
+.text-title {
+  font-size: 14px;
+}
+.text-description {
+  font-size: 10px;
+}
+#h2-text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 19px;
+  font-family: "Raleway", serif;
+}
+#imageInput,
+#description,
+#title {
+  font-size: 14px;
+}
+input {
+  height: 10px;
+}
+#main-form .form-control {
+  height: 2.2rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+#main-form .form-control.title-field {
+  height: 2rem;
+}
+#main-form .form-control.description-field {
+  height: 2rem;
+}
+.carousel-item img {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
