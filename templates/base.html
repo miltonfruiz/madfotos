@@ -35,60 +35,38 @@
   <body>
     <header>
       <div class="container-banner">
-        <nav class="navbar navbar-expand-lg container">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
-            <a class="navbar-brand" href="#"
-              ><i class="fa-solid fa-camera-retro"></i
-            ></a>
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-camera-retro"></i></a>
             <button
+            id="button-navbar-toggler"
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li title="Inicio" class="nav-item a disabled">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Inicio</a
-                  >
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" title="Inicio">Inicio</a>
                 </li>
-                <li title="Galeria" class="nav-item disabled">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Galería</a
-                  >
+                <li class="nav-item">
+                  <a class="nav-link" href="#" title="Galería">Galería</a>
                 </li>
-                <li title="Contacto" class="nav-item disabled">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Contacto</a
-                  >
+                <li class="nav-item">
+                  <a class="nav-link" href="#" title="Contacto">Contacto</a>
                 </li>
               </ul>
-              <!--<form id="form-search" class="d-flex" role="search">
-                <input
-                  id="search-input"
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Ingrese busqueda"
-                  aria-label="Search"
-                />
-                <button
-                  title="Buscar"
-                  id="search-button"
-                  class="btn btn-secondary"
-                  type="submit"
-                >
-                  Buscar <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </form> -->
             </div>
           </div>
         </nav>
+        
+        
         <div id="texts-container" class="container">
           <div id="row1" class="row">
             <div id="container-album" class="col-4">
@@ -109,8 +87,6 @@
                 >Explorar <i class="fa-solid fa-play"></i
               ></a>
             </div>
-            </div>
-          </div>
           <div id="row2">
             <div class="col">
               <div class="container-redes">
