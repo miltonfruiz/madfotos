@@ -256,7 +256,8 @@ a {
   margin-left: 5px;
   font-size: 10px;
 }
-#galery-text {
+.galery-text {
+  font-size: 25px;
   font-family: "Raleway", serif;
 }
 .fa-photo-film {
@@ -348,4 +349,11 @@ input {
 }
 #button-navbar-toggler {
   font-size: 1rem;
+}
+.text-galery {
+  font-size: 22px;
+}
+#photoCarousel {
+  max-width: 25%;
+  margin: 0 auto;
 }

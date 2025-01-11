@@ -1,17 +1,8 @@
 {% extends "base.html" %} {% block content %}
-<div class="galery-container mt-5">
-  <a
-    href="{{ url_for('main.add_photo') }}"
-    id="add-button"
-    class="btn btn-success"
-    ><i class="fa-solid fa-plus"></i> Agregar foto</a
-  >
-</div>
 <div
   id="photoCarousel"
-  class="carousel slide custom-carousel mt-4"
+  class="carousel slide custom-carousel mt-4 mb-2"
   data-bs-ride="carousel"
-  style="max-width: 75%; margin: 0 auto"
 >
   <div class="carousel-indicators">
     {% for photo in photos %}
@@ -82,5 +73,13 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+</div>
+<div class="galery-container mb-5">
+  <a
+    href="{{ url_for('main.add_photo') }}"
+    id="add-button"
+    class="btn btn-success"
+    ><i class="fa-solid fa-plus"></i> Agregar foto</a
+  >
 </div>
 {% endblock %}
