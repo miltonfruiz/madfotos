@@ -40,18 +40,22 @@ h2 {
 }
 #explore-button,
 #submit-button,
-#cancel-button,
-#edit-button,
-#delete-button,
-#add-button {
+#cancel-button {
   font-size: 11px;
   border-radius: 3px;
   padding: 7px 18px;
   color: white;
 }
+#edit-button,
+#delete-button {
+  font-size: 9px;
+  color: white;
+  border-radius: 100%;
+}
 #add-button {
-  margin: 10px;
-  margin-bottom: 10px;
+  font-size: 13px;
+  border-radius: 100%;
+  color: white;
 }
 #edit-button:hover,
 #delete-button:hover,
@@ -192,9 +196,12 @@ a {
 }
 .galery-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.container-boton-agregar-foto {
+  display: flex;
+  justify-content: end;
 }
 #search-button {
   font-family: "Raleway", serif;
@@ -261,7 +268,8 @@ a {
 }
 .fa-trash,
 .fa-pen-to-square {
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 300;
 }
 .nav-link {
   position: relative;
@@ -306,10 +314,14 @@ a {
   font-family: "Raleway", serif;
 }
 .text-title {
-  font-size: 14px;
+  margin: 0;
+  font-size: 12px;
+  text-align: left;
 }
 .text-description {
   font-size: 10px;
+  text-align: left;
+  margin: 0;
 }
 #h2-text {
   margin-top: 10px;
@@ -343,6 +355,17 @@ input {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+.carousel-item {
+  position: relative;
+}
+.button-container {
+  position: absolute;
+  bottom: 200px;
+  left: 145px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 #button-navbar-toggler {
   font-size: 1rem;
 }
@@ -350,6 +373,23 @@ input {
   font-size: 22px;
 }
 #photoCarousel {
-  max-width: 25%;
+  max-width: 22%;
   margin: 0 auto;
+  position: relative;
+}
+#image-utility {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#prev-button {
+  padding: 0;
+}
+#next-button-icon,
+#prev-button-icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: black;
+  border-radius: 100%;
 }
