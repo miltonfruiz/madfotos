@@ -421,6 +421,7 @@ input {
 #photoCarousel {
   position: relative;
 }
+#photoCarousel .carousel-indicators,
 #edit-button,
 #delete-button,
 #add-button,
@@ -429,19 +430,21 @@ input {
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
+#edit-button,
 #delete-button {
   transform: translateY(-25px);
 }
+#photoCarousel .carousel-indicators,
 #add-button {
   transform: translateY(25px);
 }
 .carousel-control-prev {
   transform: translateX(25px);
 }
-#edit-button,
 .carousel-control-next {
   transform: translateX(-25px);
 }
+#photoCarousel:hover .carousel-indicators,
 #photoCarousel:hover #edit-button,
 #photoCarousel:hover #delete-button,
 #photoCarousel:hover #add-button,
