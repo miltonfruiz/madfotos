@@ -417,3 +417,36 @@ input {
   background-color: black;
   border-radius: 100%;
 }
+/*-------------------- Efecto oculto --------------------*/
+#photoCarousel {
+  position: relative;
+}
+#edit-button,
+#delete-button,
+#add-button,
+#photoCarousel .carousel-control-prev,
+#photoCarousel .carousel-control-next {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#delete-button {
+  transform: translateY(-25px);
+}
+#add-button {
+  transform: translateY(25px);
+}
+.carousel-control-prev {
+  transform: translateX(25px);
+}
+#edit-button,
+.carousel-control-next {
+  transform: translateX(-25px);
+}
+#photoCarousel:hover #edit-button,
+#photoCarousel:hover #delete-button,
+#photoCarousel:hover #add-button,
+#photoCarousel:hover .carousel-control-prev,
+#photoCarousel:hover .carousel-control-next {
+  opacity: 1;
+  transform: translateX(0);
+}

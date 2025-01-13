@@ -4,6 +4,7 @@
   class="carousel slide custom-carousel mt-4 mb-2"
   data-bs-ride="carousel"
 >
+  <!-- Indicadores del carrusel -->
   <div class="carousel-indicators">
     {% for photo in photos %}
     <button
@@ -16,6 +17,8 @@
     ></button>
     {% endfor %}
   </div>
+
+  <!-- Elementos del carrusel -->
   <div class="carousel-inner">
     {% for photo in photos %}
     <div class="carousel-item {% if loop.first %}active{% endif %}">
@@ -70,31 +73,26 @@
     </div>
     {% endfor %}
   </div>
+
+  <!-- Botón "Anterior" -->
   <button
-    id="prev-button"
     class="carousel-control-prev"
     type="button"
     data-bs-target="#photoCarousel"
     data-bs-slide="prev"
   >
-    <span
-      id="prev-button-icon"
-      class="carousel-control-prev-icon"
-      aria-hidden="true"
-    ></span>
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
+
+  <!-- Botón "Siguiente" -->
   <button
     class="carousel-control-next"
     type="button"
     data-bs-target="#photoCarousel"
     data-bs-slide="next"
   >
-    <span
-      id="next-button-icon"
-      class="carousel-control-next-icon"
-      aria-hidden="true"
-    ></span>
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
