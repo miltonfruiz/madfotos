@@ -46,33 +46,22 @@ h2 {
   padding: 7px 18px;
   color: white;
 }
+#add-button,
 #edit-button,
 #delete-button {
+  width: 30px;
+  height: 30px;
   color: white;
-  border-radius: 100%;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
 }
 #add-button {
   font-size: 13px;
-  border-radius: 100%;
-  color: white;
-}
-#edit-button:hover {
-  color: #ffc107;
-  transition: 1s;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-#delete-button:hover {
-  color: #dc3545;
-  transition: 1s;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-#add-button:hover {
-  color: #198754;
-  transition: 1s;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .fa-plus {
   font-weight: 100;
@@ -286,6 +275,8 @@ a {
 .fa-pen-to-square {
   font-size: 13px;
   font-weight: 300;
+  padding: 0;
+  margin: 0;
 }
 .nav-link {
   position: relative;
@@ -406,27 +397,41 @@ input {
   flex-direction: column;
   justify-content: center;
 }
-#prev-button {
-  padding: 0;
+#prev-button-icon,
+#next-button-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 1s;
 }
-#next-button-icon,
-#prev-button-icon {
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: black;
-  border-radius: 100%;
+#delete-button:hover,
+#edit-button:hover,
+#add-button:hover,
+#prev-button-icon:hover,
+#next-button-icon:hover {
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.507);
+  border: 1px solid white;
+}
+#prev-button,
+#next-button {
+  top: 45%;
+  width: 40px;
+  height: 40px;
+  pointer-events: auto;
 }
 /*-------------------- Efecto oculto --------------------*/
 #photoCarousel {
   position: relative;
 }
+.text-description,
+.text-title,
 #photoCarousel .carousel-indicators,
 #edit-button,
 #delete-button,
 #add-button,
-#photoCarousel .carousel-control-prev,
-#photoCarousel .carousel-control-next {
+#photoCarousel #prev-button,
+#photoCarousel #next-button {
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
@@ -438,18 +443,22 @@ input {
 #add-button {
   transform: translateY(25px);
 }
-.carousel-control-prev {
+#next-button {
   transform: translateX(25px);
 }
-.carousel-control-next {
+.text-description,
+.text-title,
+#prev-button {
   transform: translateX(-25px);
 }
+#photoCarousel:hover .text-description,
+#photoCarousel:hover .text-title,
 #photoCarousel:hover .carousel-indicators,
 #photoCarousel:hover #edit-button,
 #photoCarousel:hover #delete-button,
 #photoCarousel:hover #add-button,
-#photoCarousel:hover .carousel-control-prev,
-#photoCarousel:hover .carousel-control-next {
+#photoCarousel:hover #prev-button,
+#photoCarousel:hover #next-button {
   opacity: 1;
   transform: translateX(0);
 }

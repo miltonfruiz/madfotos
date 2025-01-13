@@ -4,7 +4,6 @@
   class="carousel slide custom-carousel mt-4 mb-2"
   data-bs-ride="carousel"
 >
-  <!-- Indicadores del carrusel -->
   <div class="carousel-indicators">
     {% for photo in photos %}
     <button
@@ -17,8 +16,6 @@
     ></button>
     {% endfor %}
   </div>
-
-  <!-- Elementos del carrusel -->
   <div class="carousel-inner">
     {% for photo in photos %}
     <div class="carousel-item {% if loop.first %}active{% endif %}">
@@ -36,7 +33,6 @@
           >
             <button
               id="delete-button"
-              class="btn"
               type="submit"
               onclick="return confirm('¿Estás seguro de que quieres eliminar esta foto?');"
             >
@@ -46,7 +42,6 @@
           <a
             id="edit-button"
             href="{{ url_for('main.edit_photo', photo_id=photo.id) }}"
-            class="btn"
           >
             <i class="fa-solid fa-pen-to-square"></i>
           </a>
@@ -73,27 +68,33 @@
     </div>
     {% endfor %}
   </div>
-
-  <!-- Botón "Anterior" -->
   <button
+    id="prev-button"
     class="carousel-control-prev"
     type="button"
     data-bs-target="#photoCarousel"
     data-bs-slide="prev"
   >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span
+      id="prev-button-icon"
+      class="carousel-control-prev-icon"
+      aria-hidden="true"
+    ></span>
     <span class="visually-hidden">Previous</span>
   </button>
-
-  <!-- Botón "Siguiente" -->
   <button
+    id="next-button"
     class="carousel-control-next"
     type="button"
     data-bs-target="#photoCarousel"
     data-bs-slide="next"
   >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span
+      id="next-button-icon"
+      class="carousel-control-next-icon"
+      aria-hidden="true"
+    ></span>
+    <span id="next-icon" class="visually-hidden">Next</span>
   </button>
 </div>
 {% endblock %}
