@@ -73,7 +73,7 @@ h2 {
   border-radius: 3px;
   padding: 7px 30px 7px 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 10px;
+  margin: 5px 0px;
 }
 .gallery {
   display: flex;
@@ -164,7 +164,7 @@ a {
   align-items: center;
 }
 .nav-item {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   margin-left: 55px;
 }
@@ -179,24 +179,32 @@ a {
 }
 #welcome-text {
   font-family: "Raleway", serif;
-  color: black;
+  background-color: black;
+  color: white;
   font-weight: 300;
+  font-size: 13px;
+  border-left: 4px solid white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 #photo-album-text {
-  width: 100%;
+  width: 85%;
   color: black;
   font-family: "WindSong", cursive;
   font-weight: 500;
   font-size: 45px;
   margin: 0;
   padding: 0;
+  border-left: 4px solid black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 #container-album {
   display: flex;
   flex-direction: column;
   justify-content: baseline;
   align-items: baseline;
-  margin-top: 130px;
+  margin-top: 105px;
   margin-bottom: 80px;
 }
 .galery-container {
@@ -232,10 +240,12 @@ a {
 }
 #album-description-text {
   font-family: "Raleway", serif;
-  width: 90%;
+  width: 85%;
   text-align: justify;
   font-size: 10px;
-  color: black;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 #row2 {
   display: flex;
@@ -280,6 +290,8 @@ a {
   margin: 0;
 }
 .nav-link {
+  padding: 0;
+  margin: 0;
   position: relative;
   font-size: 1px;
 }
