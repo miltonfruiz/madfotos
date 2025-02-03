@@ -69,11 +69,12 @@ h2 {
 }
 #explore-button {
   font-family: "Raleway", serif;
-  font-size: 12px;
-  border-radius: 3px;
   padding: 7px 30px 7px 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 5px 0px;
+  transition: 0.3s;
+  color: black;
+  background-color: white;
 }
 .gallery {
   display: flex;
@@ -226,10 +227,10 @@ a {
 }
 #explore-button:hover,
 #search-button:hover {
-  border: 1px solid black;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  transition: 1s;
+  color: white;
+  background-color: black;
+  filter: drop-shadow(0 0 5px white);
+  transition: 0.3s;
 }
 #search-input {
   height: 30px;
@@ -314,11 +315,6 @@ a {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-.nav-link:hover {
-  color: black;
-}
-
 .custom-carousel {
   width: 600px;
   margin: 0 auto;
