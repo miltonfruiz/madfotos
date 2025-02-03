@@ -10,7 +10,7 @@
       con una descripción. Cada entrada en el álbum debe tener un título, una descripción y la imagen
       correspondiente."
     />
-    <title>Album de Fotos</title>
+    <title>Mad Fotos</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='style.css') }}"
@@ -21,6 +21,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="../static/images/madfotos.ico" type="image/x-icon">
     <script
       src="https://kit.fontawesome.com/f0e78da616.js"
       crossorigin="anonymous"
@@ -37,7 +38,7 @@
       <div class="container-banner">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-camera-retro"></i></a>
+            <a class="navbar-brand text-light" href="#"><i class="fa-solid fa-camera-retro"></i> MAD Fotos</a>
             <button
             id="button-navbar-toggler"
               class="navbar-toggler"
@@ -53,13 +54,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#" title="Inicio">Inicio</a>
+                  <a class="nav-link active text-light fw-light" href="#" title="Inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#galeria-text" title="Galería">Galerías</a>
+                  <a class="nav-link text-light fw-light" href="#galeria-text" title="Galería">Galerías</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" title="Contacto">Contacto</a>
+                  <a class="nav-link text-light fw-light" href="#" title="Contacto">Contacto</a>
                 </li>
               </ul>
             </div>
