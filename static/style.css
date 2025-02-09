@@ -9,7 +9,7 @@ li {
   font-size: 14px;
 }
 .container-banner {
-  background: url(./images/cam2.jpg) no-repeat center center;
+  background: url(./images/leon.jpg) no-repeat center center;
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
@@ -165,13 +165,18 @@ a {
   align-items: center;
 }
 .nav-item {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 500;
   margin-left: 55px;
+  letter-spacing: 3px;
 }
-.fa-search {
-  font-size: 11px;
-  padding-left: 13px;
+.fa-angles-right {
+  font-size: 13px;
+  padding-left: 5px;
+  margin: 0;
+}
+.fa-right-to-bracket {
+  font-size: 13px;
 }
 #texts-container {
   display: flex;
@@ -229,6 +234,8 @@ a {
   width: 130px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+#register:hover,
+#login:hover,
 #explore-button:hover,
 #search-button:hover {
   color: white;
@@ -238,7 +245,7 @@ a {
 }
 #search-input {
   height: 30px;
-  width: 220px;
+  width: 200px;
   font-style: oblique;
   font-size: 11px;
   font-family: "Raleway", serif;
@@ -246,7 +253,8 @@ a {
 }
 #register,
 #login {
-  font-size: 12px;
+  border-radius: 3px;
+  font-size: 11px;
   font-family: "Raleway", serif;
 }
 #album-description-text {
