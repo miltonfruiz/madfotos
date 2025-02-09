@@ -40,7 +40,7 @@
           <div class="container">
             <a class="navbar-brand text-light" href="#"><i class="fa-solid fa-camera-retro"></i> MAD Fotos</a>
             <button
-            id="button-navbar-toggler"
+              id="button-navbar-toggler"
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -51,21 +51,46 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
+        
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                  <a id="home" class="nav-link active text-white fw-light px-0" href="#" title="Inicio"><i class="fa-solid fa-house me-2"></i>Inicio</a>
+                  <a id="home" class="nav-link active text-white fw-light px-0" href="#" title="Inicio">
+                    <i class="fa-solid fa-house me-2"></i>Inicio
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light fw-light px-0" href="#galeria-text" title="Galería"><i class="fa-solid fa-images me-2"></i>Galerías</a>
+                  <a class="nav-link text-light fw-light px-0" href="#galeria-text" title="Galería">
+                    <i class="fa-solid fa-images me-2"></i>Galerías
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light fw-light px-0" href="#" title="Contacto"><i class="fa-solid fa-address-book me-2"></i>Contacto</a>
+                  <a class="nav-link text-light fw-light px-0" href="#" title="Contacto">
+                    <i class="fa-solid fa-address-book me-2"></i>Contacto
+                  </a>
                 </li>
               </ul>
+        
+              <!-- Buscador con icono de lupa dentro del input -->
+               <form class="d-flex me-3">
+                <div class="position-relative">
+                  <i class="fa-solid fa-search text-muted position-absolute top-50 start-0 translate-middle-y"></i>
+                  <input id="search-input" class="form-control rounded-pill" type="search" 
+                  placeholder="Buscar galería, evento o foto..." aria-label="Buscar">
+                </div>
+              </form>
+
+
+        
+              <!-- Botones de sesión -->
+              <div>
+                <a id="login" href="#" class="btn btn-outline-light me-2"><i class="fa-solid fa-right-to-bracket"></i> Iniciar sesión</a>
+                <a id="register" href="#" class="btn btn-light"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
+              </div>
             </div>
           </div>
         </nav>
+        
         
         
         <div id="texts-container" class="container">
