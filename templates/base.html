@@ -78,9 +78,20 @@
               </form>
               <!-->
               <div>
-                <a id="login" href="#" class="btn btn-outline-light me-2 px-3"><i class="fa-solid fa-right-to-bracket pe-1"></i> INICIAR</a>
-                <a id="register" href="#" class="btn btn-light px-3"><i class="fa-solid fa-user-plus pe-0"></i> REGISTRAR </a>
+                {% if current_user.is_authenticated %}
+                  <a href="{{ url_for('auth.logout') }}" class="btn btn-outline-light me-2 px-3">
+                    <i class="fa-solid fa-right-from-bracket pe-1"></i> CERRAR SESIÓN
+                  </a>
+                {% else %}
+                  <a id="login" href="{{ url_for('auth.login') }}" class="btn btn-outline-light me-2 px-3">
+                    <i class="fa-solid fa-right-to-bracket pe-1"></i> INICIAR
+                  </a>
+                  <a id="register" href="{{ url_for('auth.register') }}" class="btn btn-light px-3">
+                    <i class="fa-solid fa-user-plus pe-0"></i> REGISTRAR
+                  </a>
+                {% endif %}
               </div>
+              
             </div>
           </div>
         </nav>
