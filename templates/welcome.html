@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+<div class="text-center mt-20">
+  <h1 class="text-4xl font-bold">Bienvenido a Mad Fotos 📸</h1>
+  <p class="mt-4 text-gray-600">
+    Gestiona tu álbum de fotos de manera sencilla y organizada.
+  </p>
+  <div class="mt-6">
+    <a
+      href="{{ url_for('main.login') }}"
+      class="bg-green-500 text-white px-4 py-2 rounded-md"
+      >Iniciar Sesión</a
+    >
+    <a
+      href="{{ url_for('main.register') }}"
+      class="bg-blue-500 text-white px-4 py-2 rounded-md"
+      >Registrarse</a
+    >
+  </div>
+</div>
+{% endblock %}
