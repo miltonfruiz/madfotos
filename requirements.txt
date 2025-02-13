@@ -3,3 +3,7 @@ flask-migrate
 SQLAlchemy
 pydantic
 pydantic[email]
+Flask
+Flask-Login
+Flask-SQLAlchemy
+Flask-Bcrypt
