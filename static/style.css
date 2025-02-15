@@ -42,6 +42,7 @@ li {
   max-height: 300px;
   object-fit: cover;
 }
+.fa-clipboard-question,
 .feature-icon {
   font-size: 2rem;
   color: #ffc107;
@@ -75,6 +76,10 @@ footer a {
 #p-presentation {
   font-size: 16px;
 }
+#p-que-es {
+  font-size: 13px;
+  text-align: justify;
+}
 #span-presentation {
   font-weight: 900;
   text-shadow: 2px 2px 5px white;
@@ -84,6 +89,31 @@ footer a {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+#img-que-es {
+  filter: grayscale(100%);
+  max-width: 70%;
+  border: 2px solid #ffc107;
+  border-radius: 20% 50% / 40% 10%;
+  transition: filter 0.5s ease, border-color 0.5s ease, border-radius 0.5s ease;
+}
+#img-que-es:hover {
+  filter: grayscale(0%);
+  border: 2px solid black !important;
+  border-radius: 1%;
 }
 h1,
 h2 {

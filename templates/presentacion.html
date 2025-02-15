@@ -59,15 +59,32 @@
     </section>
 
     <!-- Sección ¿Qué es MAD Fotos? -->
-    <section class="container my-5 text-center">
-      <h2 class="mb-4">¿Qué es <span class="text-warning">MAD Fotos</span>?</h2>
-      <p class="lead">
-        MAD Fotos es una plataforma diseñada para que puedas almacenar,
-        organizar y compartir tus recuerdos de forma segura y sencilla. Con
-        nuestra tecnología en la nube, tendrás acceso a tus fotos desde
-        cualquier lugar y en cualquier momento, sin preocuparte por perder esos
-        momentos especiales.
-      </p>
+    <section class="container my-5 py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center">
+          <img
+            id="img-que-es"
+            src="{{ url_for('static', filename='images/cam1.jpg') }}"
+            alt="MAD Fotos - Plataforma"
+            class="img-fluid shadow-lg"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-4 fw-bold text-dark text-center">
+            <i class="fa-solid fa-clipboard-question"></i> ¿Qué es
+            <span class="text-warning">MAD Fotos</span>?
+          </h2>
+          <p id="p-que-es" class="lead text-muted">
+            <strong>MAD Fotos</strong> es una plataforma diseñada para que
+            puedas
+            <span class="text-dark">almacenar, organizar y compartir</span>
+            tus recuerdos de forma segura y sencilla. Con nuestra tecnología en
+            la nube, tendrás acceso a tus fotos desde cualquier lugar y en
+            cualquier momento, sin preocuparte por perder esos momentos
+            especiales.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Sección ¿Cómo Funciona? -->
