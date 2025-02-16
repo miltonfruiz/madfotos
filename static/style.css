@@ -103,17 +103,23 @@ footer a {
 .animate-fade-in {
   animation: fadeIn 1s ease-out;
 }
+/*----------------- ¿Que es MAD? -----------------*/
+
 #img-que-es {
   filter: grayscale(100%);
   max-width: 70%;
   border: 2px solid #ffc107;
   border-radius: 20% 50% / 40% 10%;
-  transition: filter 0.5s ease, border-color 0.5s ease, border-radius 0.5s ease;
+  transition: filter 1s ease, border-color 1s ease, border-radius 1s ease;
+  object-fit: cover;
 }
+
 #img-que-es:hover {
   filter: grayscale(0%);
   border: 2px solid black !important;
   border-radius: 1%;
+  content: url(./images/avere.jpg);
+  transition: filter 1s ease, border-color 1s ease, border-radius 1s ease;
 }
 h1,
 h2 {
