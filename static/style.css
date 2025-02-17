@@ -108,19 +108,20 @@ footer a {
 #img-que-es {
   filter: grayscale(100%);
   max-width: 70%;
-  border: 2px solid #ffc107;
   border-radius: 20% 50% / 40% 10%;
-  transition: filter 1s ease, border-color 1s ease, border-radius 1s ease;
+  transition: filter 0.5s ease-in-out, border-color 0.5s ease-in-out,
+    border-radius 0.5s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
   object-fit: cover;
+  opacity: 1;
 }
 
-#img-que-es:hover {
+#img-que-es.hovered {
   filter: grayscale(0%);
-  border: 2px solid black !important;
-  border-radius: 1%;
-  content: url(./images/avere.jpg);
-  transition: filter 1s ease, border-color 1s ease, border-radius 1s ease;
+  border-radius: 3%;
+  opacity: 0.9;
 }
+
 h1,
 h2 {
   margin: 0.5rem;
