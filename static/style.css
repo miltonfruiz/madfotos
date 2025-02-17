@@ -79,6 +79,10 @@ footer a {
 #p-que-es {
   font-size: 13px;
   text-align: justify;
+  background-color: rgba(0, 0, 0, 0.064);
+  border-radius: 4px;
+  padding: 25px;
+  border-right: 5px solid #ffc107;
 }
 #span-presentation {
   font-weight: 900;
