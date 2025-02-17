@@ -15,11 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=WindSong:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=WindSong:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <script
@@ -61,15 +57,26 @@
     <!-- Sección ¿Qué es MAD Fotos? -->
     <section class="container my-5 py-5">
       <div class="row align-items-center">
-        <div class="col-lg-6 text-center">
-          <img
-            id="img-que-es"
-            src="{{ url_for('static', filename='images/que.jpg') }}"
-            data-hover="{{ url_for('static', filename='images/cam4.jpg') }}"
-            data-original="{{ url_for('static', filename='images/que.jpg') }}"
-            alt="MAD Fotos - Plataforma"
-            class="img-fluid shadow-lg"
-          />
+        <div class="col-lg-6 text-center position-relative">
+          <div class="img-container">
+            <img
+              id="img-que-es"
+              src="{{ url_for('static', filename='images/que.jpg') }}"
+              data-hover="{{ url_for('static', filename='images/cam4.jpg') }}"
+              data-original="{{ url_for('static', filename='images/que.jpg') }}"
+              alt="MAD Fotos - Plataforma"
+              class="img-fluid shadow-lg"
+            />
+            <span class="text-overlay text-left"
+              ><i class="fa-solid fa-store"></i> Almacena!</span
+            >
+            <span class="text-overlay text-right"
+              ><i class="fa-solid fa-sitemap"></i> Organiza!</span
+            >
+            <span class="text-overlay text-bottom"
+              ><i class="fa-solid fa-share"></i> Comparte!</span
+            >
+          </div>
         </div>
         <div class="col-lg-6">
           <h2 class="mb-4 fw-bold text-dark text-center">
