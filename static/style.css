@@ -77,13 +77,36 @@ footer a {
   font-size: 16px;
 }
 #p-que-es {
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 400;
   text-align: justify;
-  background-color: rgba(0, 0, 0, 0.064);
   border-radius: 4px;
-  padding: 25px;
-  border-right: 5px solid #ffc107;
+  margin-bottom: 0;
 }
+#container-response {
+  border-right: 5px solid #ffc107;
+  margin: 7px;
+}
+.accordion-header {
+  border-left: 5px solid #ffc107;
+}
+.accordion-button {
+  border-radius: 8px !important;
+}
+.accordion-item {
+  max-width: 80%;
+  border-radius: 8px !important;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.accordion-body {
+  border-radius: 0 0 8px 8px !important;
+}
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
 #span-presentation {
   font-weight: 900;
   text-shadow: 2px 2px 5px white;
@@ -165,7 +188,7 @@ footer a {
 }
 #img-que-es {
   filter: grayscale(100%);
-  max-width: 75%;
+  max-width: 70%;
   border-radius: 20% 50% / 40% 10%;
   transition: filter 0.5s ease-in-out, border-color 0.5s ease-in-out,
     border-radius 0.5s ease-in-out, transform 0.3s ease-in-out,

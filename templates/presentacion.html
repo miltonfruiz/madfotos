@@ -78,20 +78,46 @@
             >
           </div>
         </div>
-        <div class="col-lg-6">
-          <h2 class="mb-4 fw-bold text-dark text-center">
-            <i class="fa-solid fa-clipboard-question"></i> ¿Qué es
-            <span class="text-warning">MAD Fotos</span>?
-          </h2>
-          <p id="p-que-es" class="lead text-muted">
-            <strong class="text-black fw-bold">MAD Fotos</strong> es una
-            plataforma diseñada para que puedas
-            <span class="text-dark">almacenar, organizar y compartir</span>
-            tus recuerdos de forma segura y sencilla. Con nuestra tecnología en
-            la nube, tendrás acceso a tus fotos desde cualquier lugar y en
-            cualquier momento, sin preocuparte por perder esos momentos
-            especiales.
-          </p>
+        <!-- Accordion Bootstrap -->
+        <div
+          class="col-lg-6 d-flex justify-content-center"
+          id="accordionExample"
+        >
+          <div class="accordion-item accordion w-100">
+            <h2 class="accordion-header fw-bold text-dark mx-0">
+              <button
+                id="accordionButton"
+                class="accordion-button fw-bold text-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseInfo"
+                aria-expanded="false"
+                aria-controls="collapseInfo"
+              >
+                <i class="fa-solid fa-clipboard-question me-2"></i> ¿Qué es
+                <span class="text-warning ms-1"> MAD Fotos</span>?
+              </button>
+            </h2>
+            <div
+              id="collapseInfo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div id="container-response" class="accordion-body mx-0 mb-0">
+                <p id="p-que-es" class="lead text-muted">
+                  <strong class="text-black fw-bold">MAD Fotos</strong> es una
+                  plataforma diseñada para que puedas
+                  <span class="text-dark"
+                    >almacenar, organizar y compartir</span
+                  >
+                  tus recuerdos de forma segura y sencilla. Con nuestra
+                  tecnología en la nube, tendrás acceso a tus fotos desde
+                  cualquier lugar y en cualquier momento, sin preocuparte por
+                  perder esos momentos especiales.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
