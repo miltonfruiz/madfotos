@@ -37,3 +37,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+/*---------- Apertura/Cierre acordeón Como funciona? ----------*/
+document.addEventListener("DOMContentLoaded", function () {
+  const accordionButtonHow = document.getElementById("accordionButtonHow");
+  const collapseHow = document.getElementById("collapseHowItWorks");
+  accordionButtonHow.addEventListener("mouseover", function () {
+    if (!collapseHow.classList.contains("show")) {
+      new bootstrap.Collapse(collapseHow, { toggle: true });
+    }
+  });
+  collapseHow.addEventListener("mouseleave", function () {
+    if (collapseHow.classList.contains("show")) {
+      new bootstrap.Collapse(collapseHow, { toggle: true });
+    }
+  });
+});
