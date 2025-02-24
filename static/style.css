@@ -87,6 +87,10 @@ footer a {
   border-radius: 4px;
   margin-bottom: 0;
 }
+#p-como-funciona {
+  font-size: 12px;
+  font-weight: 400;
+}
 #container-response {
   border-right: 5px solid #ffc107;
   margin: 7px;
@@ -115,7 +119,46 @@ footer a {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+#h6-steps {
+  font-size: 13px;
+}
+/* Estilos para los círculos */
+.feature-circle {
+  width: 180px; /* Tamaño del círculo */
+  height: 180px;
+  border-radius: 50%; /* Hace que sea completamente redondo */
+  border: 3px solid #ffc107; /* Borde amarillo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  background: white; /* Fondo blanco */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
 
+.feature-circle:hover {
+  transform: scale(1.1); /* Efecto de agrandado al pasar el mouse */
+}
+
+/* Ajustes responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .feature-circle {
+    width: 150px;
+    height: 150px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 #span-presentation {
   font-weight: 900;
   text-shadow: 2px 2px 5px white;
