@@ -42,6 +42,9 @@ li {
   max-height: 300px;
   object-fit: cover;
 }
+.fa-share-nodes,
+.fa-folder-open,
+.fa-upload,
 .fa-gear,
 .fa-clipboard-question,
 .feature-icon {
