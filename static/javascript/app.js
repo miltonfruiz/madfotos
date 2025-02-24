@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 50);
   });
 });
-/*---------- Apertura/Cierre acordeón automaticao ----------*/
+/*---------- Apertura/Cierre acordeón ¿Que es? ----------*/
 document.addEventListener("DOMContentLoaded", function () {
   const accordionButton = document.getElementById("accordionButton");
   const collapseInfo = document.getElementById("collapseInfo");
