@@ -85,9 +85,11 @@ footer a {
   font-size: 13px;
 }
 #p-que-es {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: justify;
   font-size: 11px;
   font-weight: 400;
-  text-align: justify;
   border-radius: 4px;
   margin-bottom: 0;
 }
@@ -97,8 +99,11 @@ footer a {
   font-weight: 400;
 }
 #container-response {
-  border-right: 3px solid #ffc107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 7px;
+  width: 50%;
 }
 .accordion-header {
   border-left: 3px solid #ffc107;
@@ -290,7 +295,7 @@ footer a {
 }
 #img-que-es.hovered {
   filter: grayscale(0%);
-  border-radius: 3%;
+  border-radius: 2%;
   opacity: 0.9;
 }
 h1,

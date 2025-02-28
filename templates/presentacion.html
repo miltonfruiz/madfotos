@@ -54,7 +54,7 @@
       </div>
     </section>
 
-    <!-- Sección ¿Qué es MAD Fotos? -->
+    <!--Sección sin uso ¿Qué es MAD Fotos?
     <section class="container my-5 py-5">
       <div class="row align-items-center">
         <div class="col-lg-6 text-center position-relative">
@@ -78,7 +78,7 @@
             >
           </div>
         </div>
-        <!-- Accordion Bootstrap -->
+        Accordion Bootstrap
         <div
           class="col-lg-6 d-flex justify-content-center"
           id="accordionExample"
@@ -117,6 +117,46 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <!-- Sección ¿Qué es MAD Fotos? -->
+    <section class="container my-5 text-center">
+      <div class="row align-items-center">
+        <h3 class="fw-bold text-dark mx-0">
+          <i class="fa-solid fa-clipboard-question me-2"></i>¿Qué es
+          <span class="text-warning ms-1"> MAD Fotos</span>?
+        </h3>
+
+        <p id="p-que-es" class="lead text-black my-3">
+          <strong class="text-black fw-bold">MAD Fotos</strong> es una
+          plataforma diseñada para que puedas
+          <span class="text-dark">almacenar, organizar y compartir</span>
+          tus recuerdos de forma segura y sencilla. Con nuestra tecnología en la
+          nube, tendrás acceso a tus fotos desde cualquier lugar y en cualquier
+          momento, sin preocuparte por perder esos momentos especiales.
+        </p>
+        <div class="text-center position-relative my-3">
+          <div class="img-container w-50 h-50">
+            <img
+              id="img-que-es"
+              src="{{ url_for('static', filename='images/signo.jpg') }}"
+              data-hover="{{ url_for('static', filename='images/cam4.jpg') }}"
+              data-original="{{ url_for('static', filename='images/signo.jpg') }}"
+              alt="MAD Fotos - Plataforma"
+              class="img-fluid shadow-lg"
+            />
+            <span class="text-overlay text-left"
+              ><i class="fa-solid fa-store"></i> Almacena!</span
+            >
+            <span class="text-overlay text-right"
+              ><i class="fa-solid fa-sitemap"></i> Organiza!</span
+            >
+            <span class="text-overlay text-bottom"
+              ><i class="fa-solid fa-share"></i> Comparte!</span
+            >
           </div>
         </div>
       </div>
