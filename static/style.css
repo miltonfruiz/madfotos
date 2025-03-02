@@ -254,12 +254,12 @@ footer a {
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .text-left {
-  top: 85%;
+  top: 82%;
   left: 0px;
   transform: translateY(-50%);
 }
 .text-right {
-  top: 85%;
+  top: 82%;
   right: 0px;
   transform: translateY(-50%);
 }
@@ -284,8 +284,8 @@ footer a {
   transition-delay: 0.6s;
 }
 #img-que-es {
-  filter: grayscale(100%);
-  max-width: 70%;
+  filter: grayscale(100%) blur(3px);
+  max-width: 61%;
   border-radius: 20% 50% / 40% 10%;
   transition: filter 0.5s ease-in-out, border-color 0.5s ease-in-out,
     border-radius 0.5s ease-in-out, transform 0.3s ease-in-out,
