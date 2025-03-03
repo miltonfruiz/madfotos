@@ -179,8 +179,8 @@ footer a {
   transform: translateY(-50%);
 }
 .how-text-right {
-  top: 92%;
-  right: -25px;
+  top: 95%;
+  right: -100px;
   transform: translateY(-50%);
 }
 #circle-three:hover ~ .how-text-left,
