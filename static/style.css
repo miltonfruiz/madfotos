@@ -26,7 +26,7 @@ li {
 /*----------------- PRESENTACION.HTML -----------------*/
 #hero {
   height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url(./images/banner.jpg) center/cover no-repeat;
   color: white;
 }
@@ -97,12 +97,12 @@ footer a {
 .text-overlay-white {
   font-family: "Caveat", serif;
   position: absolute;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1px;
   font-weight: 900;
   color: black;
   background: white;
-  padding: 8px 15px;
+  padding: 6px 15px;
   border-radius: 50% 20% / 10% 40%;
   opacity: 0;
   border: 2px solid rgb(255, 193, 7, 0.7);
@@ -116,7 +116,7 @@ footer a {
 }
 #p-como-funciona {
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
 }
 #container-response {
@@ -149,9 +149,6 @@ footer a {
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
   box-shadow: none !important;
-}
-#h6-steps {
-  font-size: 14px;
 }
 .fa-upload {
   font-size: 11px;
@@ -263,7 +260,7 @@ footer a {
   font-weight: 900;
   color: white;
   background: rgb(255, 193, 7, 0.7);
-  padding: 8px 15px;
+  padding: 6px 15px;
   border-radius: 50% 20% / 10% 40%;
   opacity: 0;
   border: 1px solid white;
