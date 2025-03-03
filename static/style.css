@@ -190,11 +190,13 @@ footer a {
   right: -25px;
   transform: translateY(-50%);
 }
+#circle-two:hover ~ .how-text-left,
 #circle-one:hover ~ .how-text-left {
   opacity: 1;
   transform: translateY(-50%) translateX(85px);
   transition-delay: 0s;
 }
+#circle-two:hover ~ .how-text-right,
 #circle-one:hover ~ .how-text-right {
   opacity: 1;
   transform: translateY(-50%) translateX(-85px);

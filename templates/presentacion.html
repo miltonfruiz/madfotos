@@ -197,12 +197,22 @@
             imágenes.
           </p>
         </div>
-        <div id="circle-two" class="col-md-3">
-          <span class="mt-3 fw-bold text-white text-overlay text-left">
-            <i class="fa-solid fa-folder-open text-warning"></i>
-            #2. Organiza Álbumes
+        <div class="col-md-3 img-container">
+          <img
+            id="circle-two"
+            src="{{ url_for('static', filename='images/signo.jpg') }}"
+            data-hover="{{ url_for('static', filename='images/organiza.jpg') }}"
+            data-original="{{ url_for('static', filename='images/signo.jpg') }}"
+            alt="MAD Fotos - Plataforma"
+            class="img-fluid shadow-lg"
+          />
+          <span class="mt-3 fw-bold text-white text-overlay how-text-left">
+            #2. Ordena Álbumes
           </span>
-          <p id="p-como-funciona">Crea álbumes y clasifica recuerdos.</p>
+          <p class="text-overlay-white how-text-right">
+            <i class="fa-solid fa-folder text-black"></i> Organiza y clasifica
+            recuerdos.
+          </p>
         </div>
         <div id="circle-three" class="col-md-3">
           <span class="mt-3 fw-bold text-white text-overlay text-left">
