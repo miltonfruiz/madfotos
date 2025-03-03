@@ -60,6 +60,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 150);
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const circleThree = document.getElementById("circle-three");
+  circleThree.addEventListener("mouseenter", function () {
+    circleThree.style.opacity = "0";
+    setTimeout(() => {
+      const newImage = circleThree.getAttribute("data-hover");
+      circleThree.setAttribute("src", newImage);
+      circleThree.style.opacity = "1";
+    }, 150);
+  });
+  circleThree.addEventListener("mouseleave", function () {
+    circleThree.style.opacity = "0";
+    setTimeout(() => {
+      const originalImage = circleThree.getAttribute("data-original");
+      circleThree.setAttribute("src", originalImage);
+      circleThree.style.opacity = "1";
+    }, 150);
+  });
+});
 /*---------- Apertura/Cierre acordeón ¿Que es? ----------*/
 document.addEventListener("DOMContentLoaded", function () {
   const accordionButton = document.getElementById("accordionButton");

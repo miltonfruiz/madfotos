@@ -45,7 +45,6 @@ li {
   max-height: 300px;
   object-fit: cover;
 }
-.fa-share-nodes,
 .fa-folder-open,
 .fa-upload,
 .fa-gear,
@@ -174,12 +173,6 @@ footer a {
     transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
     opacity 0.3s ease-in-out;
 }
-#circle-two {
-  background-image: url(./images/organiza.jpg);
-}
-#circle-three {
-  background-image: url(./images/comparte.jpg);
-}
 .how-text-left {
   top: 5%;
   left: -130px;
@@ -190,12 +183,14 @@ footer a {
   right: -25px;
   transform: translateY(-50%);
 }
+#circle-three:hover ~ .how-text-left,
 #circle-two:hover ~ .how-text-left,
 #circle-one:hover ~ .how-text-left {
   opacity: 1;
   transform: translateY(-50%) translateX(85px);
   transition-delay: 0s;
 }
+#circle-three:hover ~ .how-text-right,
 #circle-two:hover ~ .how-text-right,
 #circle-one:hover ~ .how-text-right {
   opacity: 1;
