@@ -45,6 +45,7 @@ li {
   max-height: 300px;
   object-fit: cover;
 }
+.fa-star,
 .fa-folder-open,
 .fa-upload,
 .fa-gear,
@@ -92,6 +93,76 @@ footer a {
   border-radius: 4px;
   margin-bottom: 0;
 }
+/*----------------- ¿Que es MAD? -----------------*/
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+.text-overlay {
+  font-family: "Caveat", serif;
+  position: absolute;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: white;
+  background: rgb(255, 193, 7, 0.7);
+  padding: 6px 15px;
+  border-radius: 50% 20% / 10% 40%;
+  opacity: 0;
+  border: 1px solid white;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.text-left {
+  top: 82%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+.text-right {
+  top: 82%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.text-bottom {
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+#img-que-es:hover ~ .text-left {
+  opacity: 1;
+  transform: translateY(-50%) translateX(85px);
+  transition-delay: 0s;
+}
+#img-que-es:hover ~ .text-right {
+  opacity: 1;
+  transform: translateY(-50%) translateX(-85px);
+  transition-delay: 0.3s;
+}
+#img-que-es:hover ~ .text-bottom {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-15px);
+  transition-delay: 0.6s;
+}
+#img-que-es {
+  filter: grayscale(100%) blur(3px);
+  max-width: 61%;
+  border-radius: 20% 50% / 40% 10%;
+  transition: filter 0.5s ease-in-out, border-color 0.5s ease-in-out,
+    border-radius 0.5s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  object-fit: cover;
+  opacity: 1;
+}
+#img-que-es.hovered {
+  filter: grayscale(0%);
+  border-radius: 2%;
+  opacity: 0.9;
+}
 /*----------------- ¿Como funciona? -----------------*/
 .text-overlay-white {
   font-family: "Caveat", serif;
@@ -113,6 +184,7 @@ footer a {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+#p-por-que,
 #p-como-funciona {
   color: white;
   font-size: 12px;
@@ -243,81 +315,29 @@ footer a {
 .animate-fade-in {
   animation: fadeIn 1s ease-out;
 }
-/*----------------- ¿Que es MAD? -----------------*/
-
-.img-container {
-  position: relative;
-  display: inline-block;
-}
-.text-overlay {
-  font-family: "Caveat", serif;
-  position: absolute;
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 900;
-  color: white;
-  background: rgb(255, 193, 7, 0.7);
-  padding: 6px 15px;
-  border-radius: 50% 20% / 10% 40%;
-  opacity: 0;
-  border: 1px solid white;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  pointer-events: none;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-.text-left {
-  top: 82%;
-  left: 0px;
-  transform: translateY(-50%);
-}
-.text-right {
-  top: 82%;
-  right: 0px;
-  transform: translateY(-50%);
-}
-.text-bottom {
-  left: 50%;
-  bottom: 0px;
-  transform: translateX(-50%);
-}
-#img-que-es:hover ~ .text-left {
-  opacity: 1;
-  transform: translateY(-50%) translateX(85px);
-  transition-delay: 0s;
-}
-#img-que-es:hover ~ .text-right {
-  opacity: 1;
-  transform: translateY(-50%) translateX(-85px);
-  transition-delay: 0.3s;
-}
-#img-que-es:hover ~ .text-bottom {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-15px);
-  transition-delay: 0.6s;
-}
-#img-que-es {
-  filter: grayscale(100%) blur(3px);
-  max-width: 61%;
-  border-radius: 20% 50% / 40% 10%;
-  transition: filter 0.5s ease-in-out, border-color 0.5s ease-in-out,
-    border-radius 0.5s ease-in-out, transform 0.3s ease-in-out,
-    box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  object-fit: cover;
-  opacity: 1;
-}
-#img-que-es.hovered {
-  filter: grayscale(0%);
-  border-radius: 2%;
-  opacity: 0.9;
-}
 h1,
 h2 {
   margin: 0.5rem;
 }
+/*----------------- ¿Por qué? -----------------*/
+.feature-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon i {
+  font-size: 40px;
+  color: #ffc107;
+}
+/*----------------- H O M E -----------------*/
+
 .photo {
   background-color: #fff;
   border: 1px solid #ddd;
