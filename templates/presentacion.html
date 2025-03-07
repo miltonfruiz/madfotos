@@ -29,7 +29,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body id="body-presentation">
+  <body id="body-presentation" class="bg-light bg-gradient">
     <!-- Sección Hero -->
     <section
       id="hero"
@@ -236,7 +236,7 @@
 
     <!-- Sección ¿Por qué elegir MAD Fotos? -->
     <section class="container my-5 text-center">
-      <h3 class="mt-5 mb-4 fw-bold text-dark">
+      <h3 class="mt-5 mb-4 fw-bold text-dark pt-5">
         <i class="fa-solid fa-star me-2"></i>¿Por qué elegir
         <span class="text-warning ms-1">MAD Fotos</span> ?
       </h3>
@@ -245,23 +245,33 @@
         organizar y compartir recuerdos de forma <strong>segura</strong> y
         <strong>accesible</strong> en cualquier momento.
       </p>
-      <div class="row">
-        <div class="col-md-4">
+      <div class="d-flex justify-content-evenly mx-5 my-5 pb-4">
+        <div
+          class="col-md-4 w-25 border border-warning border-2 rounded-4 p-4 shadow"
+        >
           <i class="fa-solid fa-lock feature-icon"></i>
-          <h4>Seguridad</h4>
-          <p>
+          <h6 class="my-3"><strong>Seguridad</strong></h6>
+          <p id="p-por-que" class="text-black">
             Tus fotos estarán protegidas con la mejor tecnología de cifrado.
           </p>
         </div>
-        <div class="col-md-4">
+        <div
+          class="col-md-4 w-25 border border-warning border-2 rounded-4 p-4 shadow"
+        >
           <i class="fa-solid fa-cloud-upload-alt feature-icon"></i>
-          <h4>Almacenamiento en la Nube</h4>
-          <p>Accede a tus recuerdos desde cualquier parte del mundo.</p>
+          <h6 class="my-3"><strong>Almacenamiento</strong></h6>
+          <p id="p-por-que" class="text-black">
+            Accede a tus recuerdos desde cualquier parte del mundo.
+          </p>
         </div>
-        <div class="col-md-4">
-          <i class="fa-solid fa-users feature-icon"></i>
-          <h4>Comparte con Amigos</h4>
-          <p>Envía tus fotos a tus seres queridos con solo un clic.</p>
+        <div
+          class="col-md-4 w-25 border border-warning border-2 rounded-4 p-4 shadow"
+        >
+          <i class="fa-solid fa-door-open feature-icon"></i>
+          <h6 class="my-3"><strong>Acceso</strong></h6>
+          <p id="p-por-que" class="text-black">
+            Envía tus fotos a tus seres queridos con solo un click.
+          </p>
         </div>
       </div>
     </section>

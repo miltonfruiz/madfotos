@@ -149,6 +149,7 @@ footer a {
   transition-delay: 0.6s;
 }
 #img-que-es {
+  border: 3px solid rgb(255, 193, 7, 0.7);
   filter: grayscale(100%) blur(3px);
   max-width: 61%;
   border-radius: 20% 50% / 40% 10%;
