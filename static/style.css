@@ -188,7 +188,7 @@ footer a {
 #p-por-que,
 #p-como-funciona {
   color: white;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
 }
 #container-response {
@@ -340,12 +340,12 @@ h2 {
 .feature-box {
   border: 1px solid gray;
   position: relative;
-  width: 100%;
+  width: 200px;
   height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -370,7 +370,7 @@ h2 {
   justify-content: center;
   height: 80px;
   transition: all 0.4s ease-in-out;
-  transform: translateY(100%);
+  transform: translateY(120%);
   color: black;
 }
 .feature-box:hover i {
@@ -385,7 +385,10 @@ h2 {
   transform: translateY(0);
 }
 #p-por-que {
-  text-align: justify;
+  text-align: center;
+}
+.h6-why {
+  font-size: 13px;
 }
 /*----------------- H O M E -----------------*/
 
