@@ -45,6 +45,7 @@ li {
   max-height: 300px;
   object-fit: cover;
 }
+.fa-magnifying-glass,
 .fa-star,
 .fa-folder-open,
 .fa-upload,
@@ -185,6 +186,7 @@ footer a {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+#p-explora,
 #p-por-que,
 #p-como-funciona {
   color: white;
@@ -390,6 +392,8 @@ h2 {
 .h6-why {
   font-size: 13px;
 }
+/*----------------- Explora la Plataforma -----------------*/
+
 /*----------------- H O M E -----------------*/
 
 .photo {
@@ -654,7 +658,6 @@ a {
 #form-search {
   margin-left: 250px;
 }
-.fa-magnifying-glass,
 .fa-play {
   margin-left: 5px;
   font-size: 10px;
