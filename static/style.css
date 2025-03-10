@@ -186,6 +186,7 @@ footer a {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+#p-carrousel,
 #p-explora,
 #p-por-que,
 #p-como-funciona {
@@ -389,11 +390,36 @@ h2 {
 #p-por-que {
   text-align: center;
 }
+.h6-explore,
 .h6-why {
   font-size: 13px;
 }
 /*----------------- Explora la Plataforma -----------------*/
-
+.carousel {
+  max-width: 425px;
+  margin: 0 auto;
+}
+.carousel-inner img {
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  border-radius: 50%;
+  background-color: #ffc107;
+  border: 2px solid white;
+}
+#p-carrousel {
+  margin-bottom: 5px;
+  font-style: oblique;
+}
+.carousel-indicators button {
+  background-color: white !important;
+}
+.carousel-indicators .active {
+  background-color: #ffc107 !important;
+}
 /*----------------- H O M E -----------------*/
 
 .photo {
