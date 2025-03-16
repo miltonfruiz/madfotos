@@ -41,7 +41,7 @@ li {
 #h1-presentation {
   font-size: 39px;
 }
-
+.fa-quote-right,
 .fa-magnifying-glass,
 .fa-star,
 .fa-folder-open,
@@ -183,6 +183,7 @@ footer a {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+#p-testimonios,
 #p-carrousel,
 #p-explora,
 #p-por-que,
@@ -387,9 +388,14 @@ h2 {
 #p-por-que {
   text-align: center;
 }
+.h6-test,
 .h6-explore,
 .h6-why {
   font-size: 13px;
+}
+.p-empresa,
+.p-profesion {
+  font-size: 12px;
 }
 /*----------------- Explora la Plataforma -----------------*/
 .carousel {
@@ -498,6 +504,42 @@ h2 {
 .carousel-item img:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+/*----------------- Testimonios -----------------*/
+@keyframes rotateOnce {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+  width: 85%;
+  max-width: 300px;
+  padding: 5px;
+  border: 2px solid transparent;
+  transform-style: preserve-3d;
+}
+.testimonial-card:hover {
+  border-color: #ffc107;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  animation: rotateOnce 1s ease-in-out forwards;
+}
+.testimonial-text {
+  color: white;
+  font-size: 11px;
+  font-style: italic;
+  color: #555;
+}
+.stars {
+  font-size: 1.2rem;
+  color: #ffc107;
 }
 /*----------------- H O M E -----------------*/
 
