@@ -109,3 +109,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+/*---------- Animación de Conteo en Estadísticas ----------*/
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll(".counter");
+
+  counters.forEach((counter) => {
+    let target = +counter.getAttribute("data-target");
+    let count = 0;
+    let increment = target / 100;
+
+    function updateCounter() {
+      if (count < target) {
+        count += increment;
+        counter.innerText = Math.floor(count);
+        setTimeout(updateCounter, 20);
+      } else {
+        counter.innerText = target;
+      }
+    }
+
+    updateCounter();
+  });
+});
