@@ -580,7 +580,10 @@ h2 {
 }
 /*----------------- Footer -----------------*/
 .footer {
-  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
   background-color: #222;
   color: #fff;
   text-align: center;
@@ -590,6 +593,7 @@ h2 {
 .footer-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
