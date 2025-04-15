@@ -599,8 +599,8 @@ h2 {
 }
 .social-icons a {
   color: #fff;
-  font-size: 20px;
-  margin: 0 10px;
+  font-size: 23px;
+  margin: 0 7px;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .social-icons a:hover {
